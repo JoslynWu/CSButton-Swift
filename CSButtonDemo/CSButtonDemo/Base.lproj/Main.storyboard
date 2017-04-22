@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CSButtonDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AWf-37-AxG">
+                                <rect key="frame" x="50" y="489" width="275" height="29"/>
+                                <segments>
+                                    <segment title="top"/>
+                                    <segment title="bottom"/>
+                                    <segment title="right"/>
+                                    <segment title="left"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeButtonStyle:" destination="BYZ-38-t0r" eventType="valueChanged" id="nGr-Vy-UB7"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zt-lf-ObX">
+                                <rect key="frame" x="50" y="417.5" width="275" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AWf-37-AxG" secondAttribute="trailing" constant="50" id="6IS-nJ-wk0"/>
+                            <constraint firstItem="AWf-37-AxG" firstAttribute="trailing" secondItem="6zt-lf-ObX" secondAttribute="trailing" id="9Tp-xv-AjB"/>
+                            <constraint firstItem="AWf-37-AxG" firstAttribute="top" secondItem="6zt-lf-ObX" secondAttribute="bottom" constant="50" id="Hzy-j7-sAW"/>
+                            <constraint firstItem="AWf-37-AxG" firstAttribute="centerX" secondItem="6zt-lf-ObX" secondAttribute="centerX" id="VS2-nb-4aq"/>
+                            <constraint firstItem="AWf-37-AxG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="n08-89-aLq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AWf-37-AxG" secondAttribute="bottom" constant="150" id="pXi-3N-1f6"/>
+                            <constraint firstItem="AWf-37-AxG" firstAttribute="leading" secondItem="6zt-lf-ObX" secondAttribute="leading" id="rZH-J1-xwA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descLabel" destination="6zt-lf-ObX" id="3j9-37-qpr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
