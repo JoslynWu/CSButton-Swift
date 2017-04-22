@@ -8,7 +8,7 @@
 
 ## 什么效果
 
-![](/Screenshot/CSButton.gif)
+![](/resource/CSButton.gif)
 
 ## 怎么使用
 
